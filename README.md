@@ -14,22 +14,22 @@
   5. Enter manage environment
   6. Replace the existing token with the copied one
   7. Create Categories: { code, description }
-    7.1. The code field need have a 4 chars.
-    7.2. The description is required
-    7.3. Exemple: footwear, pants, Shirts...
+      1. The code field need have a 4 chars.
+      2. The description is required
+      3. Exemple: footwear, pants, Shirts...
   8. Create Colors: { code, description }
-    8.1. The code field need have a 4 chars.
-    8.2. The description is required
+      1. The code field need have a 4 chars.
+      2. The description is required
   9. Create Models: { code, description }
-    9.1. The code field need have a 4 chars.
-    9.2. The description is required
-    9.3. Exemple: sneakers, boots, sandals, polo, sleeveless...
+      1. The code field need have a 4 chars.
+      2. The description is required
+      3. Exemple: sneakers, boots, sandals, polo, sleeveless...
   10. Create Sizes: { code, description }
-    10.1. The code field need have a 4 chars.
-    10.2. The description is required
-    10.3. Exemple: 1, 10, S, M, L, Large...
+      1. The code field need have a 4 chars.
+      2. The description is required
+      3. Exemple: 1, 10, S, M, L, Large...
   11. Create Products: { balance, description, category_code, color_code, model_code, size_code }
-    10.2. All fiels is required
+      1. All fiels is required
   12. GET, PUT and DELETE all register previously included
 
   Note: The Sku code is generated with the codes a dependencies:
@@ -116,21 +116,21 @@
   2. @shared/infra/http/server/routes
   3. @module/moduleName/infra/http/routes/moduleName.route
   4. @module/moduleName/infra/http/controller/ModuleNameController
-    * @modules/moduleName/services/modulename/ActionModuleNameService.ts
-      * @modules/moduleName/repositories/IModuleNameRepository
-        * @modules/moduleName/dtos/IActionModuleNameDTO
-  4.1.1.1.1. @modules/moduleName/infra/typeorm/entities/ModuleName
-  4.1.2. @modules/moduleName/infra/typeorm/entities/ModuleName
-  4.2. tsyringe.container.resolve(new ActionService)
-  4.2.1. @modules/moduleName/repositories/IModuleNameRepository
-  4.2.1.1. @modules/moduleName/dtos/IActionModuleNameDTO
-  4.2.1.1.1. @modules/moduleName/infra/typeorm/entities/ModuleName
-  4.2.2. @modules/moduleName/infra/typeorm/repositories/ModuleName
-  4.2.2.1. @modules/moduleName/repositories/IModuleNameRepository
-  4.2.2.1.1. @modules/moduleName/dtos/IActionModuleNameDTO
-  4.2.2.1.1.1. @modules/moduleName/infra/typeorm/entities/ModuleName
-  4.2.2.2. @modules/moduleName/dtos/IActionModuleNameDTO
-  4.2.2.2.1. @modules/moduleName/infra/typeorm/entities/ModuleName
+      1. @modules/moduleName/services/modulename/ActionModuleNameService.ts
+          1. @modules/moduleName/repositories/IModuleNameRepository
+              1. @modules/moduleName/dtos/IActionModuleNameDTO
+                  1. @modules/moduleName/infra/typeorm/entities/ModuleName
+          2. @modules/moduleName/infra/typeorm/entities/ModuleName
+      2. tsyringe.container.resolve(new ActionService)
+          1. @modules/moduleName/repositories/IModuleNameRepository
+              1. @modules/moduleName/dtos/IActionModuleNameDTO
+                  1. @modules/moduleName/infra/typeorm/entities/ModuleName
+          2. @modules/moduleName/infra/typeorm/repositories/ModuleName
+              1. @modules/moduleName/repositories/IModuleNameRepository
+                  1. @modules/moduleName/dtos/IActionModuleNameDTO
+                      1. @modules/moduleName/infra/typeorm/entities/ModuleName
+              2. @modules/moduleName/dtos/IActionModuleNameDTO
+                  1. @modules/moduleName/infra/typeorm/entities/ModuleName
 
 ## Order of creation of files to add new entity or module
   1. @modules/moduleName/infra/typeorm/entities/ModuleName.ts
