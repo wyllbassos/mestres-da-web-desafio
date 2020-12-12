@@ -116,9 +116,9 @@
   2. @shared/infra/http/server/routes
   3. @module/moduleName/infra/http/routes/moduleName.route
   4. @module/moduleName/infra/http/controller/ModuleNameController
-  4.1. @modules/moduleName/services/modulename/ActionModuleNameService.ts
-  4.1.1. @modules/moduleName/repositories/IModuleNameRepository
-  4.1.1.1. @modules/moduleName/dtos/IActionModuleNameDTO
+    * @modules/moduleName/services/modulename/ActionModuleNameService.ts
+      * @modules/moduleName/repositories/IModuleNameRepository
+        * @modules/moduleName/dtos/IActionModuleNameDTO
   4.1.1.1.1. @modules/moduleName/infra/typeorm/entities/ModuleName
   4.1.2. @modules/moduleName/infra/typeorm/entities/ModuleName
   4.2. tsyringe.container.resolve(new ActionService)
